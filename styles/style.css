@@ -277,22 +277,24 @@ input {
 
 .content__video-card-description-container {
   flex-grow: 1;
-  display: flex;
+  display: block;
   flex-direction: column;
   justify-content: center;
+  
 }
 
 .content__video-card-title {
-  font-family: 'Oswald', sans-serif;
-  font-weight: 700;
-  font-style: Bold;
-  font-size: 30px;
-  line-height: 100%;
-  text-transform: uppercase;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  width: 100%;    
+  font-family: 'Oswald', sans-serif; 
+  font-weight: 700; 
+  font-style: Bold; 
+  font-size: 30px; 
+  line-height: 100%; 
+  text-transform: uppercase; 
+  display: block;
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+  max-width: 196px; 
 }
 
 .content__video-card-description {
