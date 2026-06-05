@@ -57,7 +57,6 @@ ol {
   justify-self: center;
   align-self: center;
   width: 1140px;
-  
   gap: 30px;
 }
 
@@ -67,9 +66,6 @@ ol {
   align-self: flex-end;
   flex-direction: column;
   width: 711px;
- 
-  
-
 }
 
 .result__video-container {
@@ -97,7 +93,6 @@ ol {
 .search-form__fieldset {
   display: flex;
   flex-direction: column;
-  
   border: none;
   gap: 5px;
 }
@@ -126,7 +121,6 @@ ol {
 .search-form__checkbox-list {
   display: flex;
   width: 212px;
-  
   gap: 15px
 }
 
@@ -149,7 +143,6 @@ input {
   color: #fff;
   font-family: inherit;
   font-size: 16px;
-
 }
 
 .search-form__textfield::placeholder {
@@ -205,8 +198,16 @@ input {
   align-self: end;
 }
 
+.more-button-template {
+  display: block;
+}
+
 .more-button {
+  display: inline-block;
   width: 100%;
+  height: 34px;
+  padding: 8px;
+  box-sizing: border-box;
 }
 
 .button:hover {
@@ -215,7 +216,7 @@ input {
 }
 
 .button:active {
-  background-color: rgba(84 80 80 1 / 0.2);
+  background-color: rgba(84, 80, 80, 1);
   text-decoration: none;
 }
 
@@ -250,7 +251,7 @@ input {
   flex-direction: column;
   width: 399px;
   gap: 30px;
-  padding: 0 3px;
+  padding: 0 6px;
 }
 
 .content__list-container {
@@ -258,7 +259,6 @@ input {
   display: flex;
   flex-direction: column;
   overflow-y: auto;
-  
   gap: 30px;
 }
 
@@ -309,7 +309,6 @@ input {
 }
 
 .content__video-card-thumbnail {
-  
   height: 103px;
   min-width: 194px;
   object-fit: cover;
@@ -335,10 +334,14 @@ input {
 
 .content__card-link:focus-visible {
   outline: 1px solid #fff;
-  outline-offset: 3px;
+  outline-offset: 1px;
 }
 
 .result__video-container,
 .content__list-container {
   position: relative;
+}
+
+.content__card-link_current {
+  background-color: rgba(84, 80, 80, 1);
 }
